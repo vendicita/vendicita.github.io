@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-image: radial-gradient(#bee2f5, #dfdbff, #c9fae4);
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+#container .heading h1 {
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid red;
+}
+#container .heading h1 span {
+    font-weight: 100;
+}
+#container .heading {
+    width: 50%;
+    padding-bottom: 50px;
+
+}
+#container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#container .box .gambar {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+#container .box .gambar img {
+    width: 100%;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+#container .btn {
+    margin: 40px 0 70px 0;
+    background: #222;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+#container .btn a {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.footercontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #bee2f5;
+    border-radius: 50%;
+}
+.socialicon a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialicon a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialicon a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+@media only screen and (max-width: 765px) {
+    #container .box {
+        flex-direction: column;
+    }
+    #container .box .gambar {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 643px) {
+    #container .heading{
+        width: 100%;
+    }
+    #container .heading h1 {
+        font-size: 1em;
+    }
+}

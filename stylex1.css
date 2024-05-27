@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+.carousel-inner {
+    justify-content: center;
+}
+.row {
+    border: 1px solid #f5c1be;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+.column {
+    border: 1px solid #f5c0be;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.carousel-item img{
+    width: 480px;
+    height: 480px;
+    align-items: center;
+}
+
+.m-d98df724 {
+    flex: 0 0 var(--carousel-slide-size);
+    margin-bottom: var(--_slide-mb, 0);
+    margin-left: var(--_slide-ml, 0);
+    margin-right: var(--_slide-mr, 0);
+    padding-bottom: var(--_slide-pb, 0);
+    padding-left: var(--_slide-pl, 0);
+    padding-right: var(--_slide-pr, 0);
+    position: relative;
+}
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+    margin-top: 3em;
+}
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #bee2f5;
+    border-radius: 50%;
+}
+.socialicon a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialicon a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialicon a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+@media screen and (max-width: 580px) {
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .carousel-item img{
+        width: 480px;
+        height: 480px;
+        align-items: center;
+    }
+}

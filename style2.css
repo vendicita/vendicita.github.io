@@ -1,0 +1,15 @@
+.jumbotron {
+    padding-top: 2rem;
+    background-color: #bee2f5;
+}
+body {
+    background-color: #bee2f5;
+    background-image: linear-gradient(180deg, #ff9797, #bee2f5);
+}
+.card {
+    background-color: #afa2a2b1;
+    
+}
+.card-text {
+    font-size: 13;
+    color: black;
