@@ -1,18 +1,24 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(135deg, #A3FFC2, #A4DFBC, #75EBE1, #51CDC5, #A5B6ED);
 }
 .carousel-inner {
     justify-content: center;
 }
+
+.carousel-inner img {
+    width: 100%;
+      height: 100%;
+      object-fit: contain; 
+  }
 .row {
-    border: 1px solid #f5c1be;
+    border: none;
     display: flex;
     flex-wrap: wrap;
     padding: 2em 1em;
     text-align: center;
 }
 .column {
-    border: 1px solid #f5c0be;
+    border: none;
     margin-top: 20px;
     margin-bottom: 20px;
 }

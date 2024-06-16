@@ -6,10 +6,10 @@
 
 }
 body {
-    background-color: #bee2f5;
+    background-image: linear-gradient(180deg, #C4E3E0, #ADE1BA, #97F6A9, #81E1C2);
 }
 .row {
-    border: 1px solid #bee2f5;
+    border: none;
     display: flex;
     flex-wrap: wrap;
     padding: 2em 1em;
@@ -17,7 +17,7 @@ body {
 }
 .column {
     width: 100%;
-    border: 1px solid #bee2f5;
+    border: none;
     padding: 0.5em 0;
 }
 h1 {

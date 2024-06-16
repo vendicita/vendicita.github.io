@@ -7,7 +7,9 @@
     max-width: 2000px;
     background-color: #ff9797
 }
-
+.info {
+    background-color: #bec5f5;
+}
 #project {
     background-color: #ff9797;
 }
@@ -34,5 +36,14 @@
 body {
     background-image: radial-gradient(#bee2f5, #dfdbff, #c9fae4);
 }
-    
+@media only screen and (max-width: 576px) {
+    .info img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
     
