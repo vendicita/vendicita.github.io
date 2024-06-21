@@ -22,7 +22,7 @@ body {
     background-color: #98f5df;
 }
 .row {
-    border: 1px solid #bee2f5;
+    border: none;
     display: flex;
     flex-wrap: wrap;
     padding: 2em 1em;
@@ -30,7 +30,7 @@ body {
 }
 .column {
     width: 100%;
-    border: 1px solid #bee2f5;
+    border: none;
     padding: 0.5em 0;
 }
 h3 {
@@ -138,5 +138,20 @@ h3 {
     .jumbotron {
         background-size: cover;
         
+    }
+}
+@media screen and (max-width: 991px) {
+    .column {
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        width: 80%;
+        margin: 1em 0;
+    }
+    .icons {
+        width: 2em;
+        height: 2em;
+        font-size: 1em;
     }
 }
