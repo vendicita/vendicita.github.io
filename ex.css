@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+#pesan {
+    background-color: #dff4ff;
+}
+#pesan .row {
+    border: 1px solid #dff4ff;
+}
+.jumbotron {
+    background-image: url(img/bg-vendis2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+body {
+    background-color: #98f5df;
+}
+.carousel-inner {
+    justify-content: center;
+}
+
+.carousel-inner img {
+    width: 100%;
+      height: 100%;
+      object-fit: contain; 
+}
+.carousel-item img{
+    width: 480px;
+    height: 480px;
+    align-items: center;
+}
+.carousel-item video {
+    width: 90%;
+    height: 90%;
+    align-items: center;
+}
+.m-d98df724 {
+    flex: 0 0 var(--carousel-slide-size);
+    margin-bottom: var(--_slide-mb, 0);
+    margin-left: var(--_slide-ml, 0);
+    margin-right: var(--_slide-mr, 0);
+    padding-bottom: var(--_slide-pb, 0);
+    padding-left: var(--_slide-pl, 0);
+    padding-right: var(--_slide-pr, 0);
+    position: relative;
+}
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.row {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+.column {
+    width: 100%;
+    border: none;
+    padding: 0.5em 0;
+}
+h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: blue;
+}
+.card {
+    box-shadow: 0 0 2.2em rgba(25, 0, 58, 0.15);
+    padding: 3.5em 1em;
+    border-radius: 0.6cm;
+    color: #1f003b;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 90%;
+}
+.card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: #a993ff;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+.card h4 {
+    font-weight: 500;
+    text-align: center;
+}
+.card p {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+    text-align: center;
+}
+.card:hover {
+    background: linear-gradient(#ff9797, #bee2f5);
+    color: #ffffff;
+
+}
+.card:hover .img-container {
+    transform: scale(1.15);
+}
+
+.msgg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px; /* Sesuaikan jarak kiri sesuai keinginan */
+    width: calc(100% - 20px); /* Sesuaikan lebar maksimal bubble chat */
+    background-color: #a993ff;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.msgg::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px; /* Sesuaikan jarak kiri segitiga */
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #a993ff transparent transparent;
+}
+
+.col-sm-6.col-md-8 {
+    position: relative; /* Pastikan parent memiliki posisi relative untuk bubble chat */
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #bee2f5;
+    border-radius: 50%;
+}
+.socialicon a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialicon a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialicon a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+@media screen and (min-width: 768px) {
+    section {
+        padding: 1em 7em;
+    }
+}
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em;
+    }
+    .card {
+        padding: 5em 1em;
+    }
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+    
+}
+@media screen and (max-width: 764px) {
+    .jumbotron {
+        background-size: cover;
+        
+    }
+    .carousel-item video {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 991px) {
+    .column {
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        width: 100%;
+        margin: 1em 0;
+        min-width: 15em;
+    }
+    .icons {
+        width: 2em;
+        height: 2em;
+        font-size: 1em;
+    }
+}
+@media (max-width: 575.98px) {
+    .msgg {
+        position: relative;
+        top: auto;
+        transform: none;
+        margin-top: 5px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .msgg::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: -20px; /* Sesuaikan jarak kiri segitiga */
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent #a993ff transparent transparent;
+    }
+   
+    .col-sm-6.col-md-8 {
+        order: 2;
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .col-6.col-md-4 {
+        order: 1;
+        text-align: center;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card h4 {
+        text-align: center;
+    }
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        min-width: 15em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 949px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-sm-6.col-md-8,
+    .col-6.col-md-4 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 580px) {
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .carousel-item img{
+        width: 480px;
+        height: 480px;
+        align-items: center;
+    }
+}
