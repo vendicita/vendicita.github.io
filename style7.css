@@ -1,0 +1,166 @@
+body {
+    background-image: linear-gradient(135deg, #B5E0FF, #64A4C4, #C088FF, #7D95FA);
+  
+}
+
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.thumbnail {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover img {
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.playlist-button {
+    position: relative;
+    width: 550px; /* Sesuaikan lebar sesuai kebutuhan */
+    height: 100px; /* Sesuaikan tinggi sesuai kebutuhan */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Spasi antara kotak-kotak */
+    background: linear-gradient(180deg, #3EA1CB, #85BBE8, #C5D7FF); /* Gradien latar belakang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    transition: transform 0.3s ease;
+}
+.playlist-button:hover {
+    transform: scale(1.1); /* Contoh transformasi saat dihover */
+}
+
+.playlist-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s ease, background-color 0.3s ease; 
+}
+
+.playlist-button:hover .button-overlay {
+    opacity: 1;
+}
+
+.button-label {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.row {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+.column {
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footercontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+    margin-top: 3em;
+}
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #bee2f5;
+    border-radius: 50%;
+}
+.socialicon a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialicon a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialicon a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+@media screen and (max-width: 504px) {
+    .button-label {
+        font-size: 1em;
+    }
+    .playlist-button:hover {
+        transform: scale(1.05);
+    }
+}

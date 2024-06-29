@@ -1,0 +1,155 @@
+body {
+    background-image: linear-gradient(135deg, #B5E0FF, #64A4C4, #C088FF, #7D95FA);
+    
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.space-y-10 > * + * {
+    margin-top: 2.5rem;
+}
+
+.md\:space-y-0 {
+    margin-top: 0;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hover\:shadow-2xl:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+.p-5 {
+    padding: 1.25rem;
+}
+
+.w-\[240px\] {
+    width: 240px;
+}
+
+.lg\:w-\[320px\] {
+    width: 320px;
+}
+
+.xl\:w-\[360px\] {
+    width: 360px;
+}
+
+.h-\[240px\] {
+    height: 240px;
+}
+
+.lg\:h-\[320px\] {
+    height: 320px;
+}
+
+.xl\:h-\[360px\] {
+    height: 360px;
+}
+
+.bg-gradient-to-b {
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.from-purple-500 {
+    --tw-gradient-from: #a855f7;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(168, 85, 247, 0));
+}
+
+.via-purple-400 {
+    --tw-gradient-stops: var(--tw-gradient-from), #c084fc, var(--tw-gradient-to, rgba(192, 132, 252, 0));
+}
+
+.to-white {
+    --tw-gradient-to: #ffffff;
+}
+
+.from-cyan-300 {
+    --tw-gradient-from: #67e8f9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(103, 232, 249, 0));
+}
+
+.via-blue-300 {
+    --tw-gradient-stops: var(--tw-gradient-from), #93c5fd, var(--tw-gradient-to, rgba(147, 197, 253, 0));
+}
+
+.to-blue-200 {
+    --tw-gradient-to: #bfdbfe;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.lg\:text-4xl {
+    font-size: 2.25rem;
+}
+
+.text-white {
+    color: white;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+.footercontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+    margin-top: 3em;
+}
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #bee2f5;
+    border-radius: 50%;
+}
+.socialicon a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialicon a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialicon a:hover i {
+    color: white;
+    transition: 0.5s;
+}
