@@ -6,10 +6,10 @@
 
 }
 #pesan {
-    background-color: #dff4ff;
+    background-image: linear-gradient(180deg, #C4E3E0, #ADE1BA, #97F6A9, #81E1C2);
 }
 #pesan .row {
-    border: 1px solid #dff4ff;
+    border: none
 }
 .jumbotron {
     background-image: url(img/bg-vendis2.jpg);
@@ -19,7 +19,7 @@
     position: relative;
 }
 body {
-    background-color: #98f5df;
+    background-color: #6cecd2;
 }
 .carousel-inner {
     justify-content: center;
