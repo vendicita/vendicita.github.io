@@ -12,6 +12,10 @@ var container = document.getElementById('container'); // Ambil kontainer galeri
 
 modal.style.display = "none";
 
+// Loop melalui setiap gambar dan tambahkan atribut loading="lazy"
+images.forEach(function(img) {
+    img.loading = 'lazy';
+});
 
 // Tambahkan event listener untuk setiap gambar
 images.forEach(function(img, index) {
